@@ -1,0 +1,19 @@
+.form-label {
+    font-size: 130%;
+}
+
+.btn-primary {
+    font-size: 120%;
+    margin-top: 3%;
+}
+
+.letras {
+    margin-bottom: 5%;
+}
+
+.button-contenedor {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    margin-top: 20px;       
+}
