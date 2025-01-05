@@ -69,12 +69,12 @@ h1 {
 
     .img-fluid {
         max-width: 80%; /* Reduce aún más el tamaño en móviles */
-        
+        padding-bottom: 0%;
     }
 
     .titulo {
-        font-size: 2.2rem; /* Reduce el tamaño del título */
+        font-size: 2.3rem; /* Reduce el tamaño del título */
         margin-bottom: 3%;
-        margin-top: 0%;
+        padding-top: 0%;
     }
 }
