@@ -20,8 +20,7 @@
 img {
     max-width: 50%;
     height: auto;
-    margin-bottom: 7%;
-    margin-left: 10%;
+    margin-bottom: 7%;  
 }
 
 h1 {
@@ -71,7 +70,7 @@ h1 {
     }
 
     img {
-        max-width: 80%; /* Reduce el tamaño al 80% en pantallas pequeñas */
+        max-width: 30%; /* Reduce el tamaño al 80% en pantallas pequeñas */
         margin-bottom: 5%; /* Ajusta el margen inferior */
     }
 
