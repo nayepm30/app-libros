@@ -1,23 +1,55 @@
-/* General */
-.form-label {
-    font-size: 1.2rem;
+/* Estilo para el botón */
+.btnIngresar .btn-primary {
+    font-size: 1.1rem; /* Aumenta el tamaño de la fuente */
+    padding: 0.4rem 0rem; /* Ajusta el relleno */
+    width: 30%; /* Opcional: Haz que el botón ocupe todo el ancho del contenedor */
 }
 
-/* Estilo para el botón */
-.btn-primary {
-    font-size: 1rem;
-    margin-top: 10px;
+.btnIngresar {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 5%; /* Espaciado superior */
+}
+
+.btnIngresar .btn-primary {
+    font-size: 1.1rem; /* Tamaño de la fuente */
+    padding: 0.4rem 1.5rem; /* Ajusta el relleno para hacer el botón más grande */
 }
 
 /* Imagen en dispositivos pequeños */
 img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 7%;
 }
 
-/* Clase personalizada para el logo */
-.letras {
-    max-width: 50%;
+h1 {
+    margin-bottom: 8%;
+    text-align: center;
+}
+
+.form-label {
+    font-size: 130%;
+}
+
+.form-control {
+    width: 100%; /* Ancho personalizado */
+    height: 100%; /* Altura personalizada */
+    font-size: 1.2rem; /* Tamaño de letra */
+}
+
+.titulo {        
+    font-family: "Rowdies", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(37, 132, 255);
+    font-size: 3rem; /* Cambia el tamaño aquí (3rem es un ejemplo) */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 2%;
+}
+
+.col-12 {
+    margin-bottom: 6%;
 }
 
 /* Adaptaciones específicas para móviles */
