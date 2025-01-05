@@ -1,19 +1,36 @@
+/* General */
 .form-label {
-    font-size: 130%;
+    font-size: 1.2rem;
 }
 
+/* Estilo para el botón */
 .btn-primary {
-    font-size: 120%;
-    margin-top: 3%;
+    font-size: 1rem;
+    margin-top: 10px;
 }
 
+/* Imagen en dispositivos pequeños */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Clase personalizada para el logo */
 .letras {
-    margin-bottom: 5%;
+    max-width: 50%;
 }
 
-.button-contenedor {
-    display: flex;
-    justify-content: center; 
-    align-items: center;    
-    margin-top: 20px;       
+/* Adaptaciones específicas para móviles */
+@media (max-width: 576px) {
+    .form-label {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+    }
+
+    .letras {
+        max-width: 70%;
+    }
 }
