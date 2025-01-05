@@ -17,10 +17,13 @@
 }
 
 /* Imagen en dispositivos pequeños */
-img {
-    max-width: 50%;
-    height: auto;
+.img-fluid {
+    max-width: 80%; /* Reduce el tamaño en computadoras */
+    height: auto; /* Mantén la proporción */
     margin-bottom: 7%;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -69,9 +72,9 @@ h1 {
         max-width: 70%;
     }
 
-    img {
-        max-width: 30%; /* Reduce el tamaño al 80% en pantallas pequeñas */
-        margin-bottom: 5%; /* Ajusta el margen inferior */
+    .img-fluid {
+        max-width: 60%; /* Reduce aún más el tamaño en móviles */
+        margin-bottom: 5%;
     }
 
     .titulo {
