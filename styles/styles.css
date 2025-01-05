@@ -1,11 +1,4 @@
 /* Estilo para el botón */
-.btnIngresar .btn-primary {
-    font-size: 1.1rem; /* Aumenta el tamaño de la fuente */
-    padding: 0.4rem 0rem; /* Ajusta el relleno */
-    width: 30%; /* Opcional: Haz que el botón ocupe todo el ancho del contenedor */
-    text-align: center;
-}
-
 .btnIngresar {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
@@ -14,7 +7,13 @@
 
 .btnIngresar .btn-primary {
     font-size: 1.1rem; /* Tamaño de la fuente */
-    padding: 0.4rem 1.5rem; /* Ajusta el relleno para hacer el botón más grande */
+    padding: 0.4rem 1.5rem; /* Ajusta el relleno */
+    width: auto; /* El ancho se adapta al contenido */
+    display: flex; /* Flexbox para centrar el texto */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Asegura alineación de texto */
+    margin: auto; /* Centra el botón */
 }
 
 /* Imagen en dispositivos pequeños */
@@ -44,7 +43,7 @@ h1 {
     font-weight: 900;
     font-style: normal;
     color: rgb(37, 132, 255);
-    font-size: 2.7rem; /* Cambia el tamaño aquí (3rem es un ejemplo) */
+    font-size: 2.7rem; /* Cambia el tamaño aquí */
     text-align: center; /* Centra el texto */
     margin-bottom: 2%;
 }
