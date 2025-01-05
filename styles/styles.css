@@ -21,6 +21,7 @@ img {
     max-width: 50%;
     height: auto;
     margin-bottom: 7%;
+    margin-left: 10%;
 }
 
 h1 {
@@ -35,10 +36,10 @@ h1 {
 .form-control {
     width: 100%; /* Ancho personalizado */
     height: 100%; /* Altura personalizada */
-    font-size: 1.2rem; /* Tamaño de letra */
+    font-size: 1.08rem; /* Tamaño de letra */
 }
 
-.titulo {        
+.titulo {
     font-family: "Rowdies", serif;
     font-weight: 900;
     font-style: normal;
@@ -46,7 +47,10 @@ h1 {
     font-size: 2.7rem; /* Cambia el tamaño aquí */
     text-align: center; /* Centra el texto */
     margin-bottom: 2%;
+    display: block; /* Asegura que sea un bloque visible */
+    visibility: visible; /* Garantiza que se vea siempre */
 }
+
 
 .col-12 {
     margin-bottom: 6%;
@@ -64,5 +68,14 @@ h1 {
 
     .letras {
         max-width: 70%;
+    }
+
+    img {
+        max-width: 80%; /* Reduce el tamaño al 80% en pantallas pequeñas */
+        margin-bottom: 5%; /* Ajusta el margen inferior */
+    }
+
+    .titulo {
+        font-size: 2rem; /* Reduce el tamaño del título */
     }
 }
