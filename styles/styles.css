@@ -18,7 +18,7 @@
 
 /* Imagen en dispositivos pequeños */
 .img-fluid {
-    max-width: 80%; /* Reduce el tamaño en computadoras */
+    max-width: 90%; /* Reduce el tamaño en computadoras */
     height: auto; /* Mantén la proporción */
     margin-bottom: 7%;  
     display: block;
@@ -46,13 +46,12 @@ h1 {
     font-weight: 900;
     font-style: normal;
     color: rgb(37, 132, 255);
-    font-size: 2.7rem; /* Cambia el tamaño aquí */
+    font-size: 3.5rem; /* Cambia el tamaño aquí */
     text-align: center; /* Centra el texto */
     margin-bottom: 2%;
     display: block; /* Asegura que sea un bloque visible */
     visibility: visible; /* Garantiza que se vea siempre */
 }
-
 
 .col-12 {
     margin-bottom: 6%;
@@ -74,10 +73,11 @@ h1 {
 
     .img-fluid {
         max-width: 80%; /* Reduce aún más el tamaño en móviles */
-        margin-bottom: 25%;
+        
     }
 
     .titulo {
-        font-size: 2rem; /* Reduce el tamaño del título */
+        font-size: 1.8rem; /* Reduce el tamaño del título */
+        margin-bottom: 0.5rem;
     }
 }
