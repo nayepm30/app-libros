@@ -73,8 +73,8 @@ h1 {
     }
 
     .img-fluid {
-        max-width: 60%; /* Reduce aún más el tamaño en móviles */
-        margin-bottom: 5%;
+        max-width: 70%; /* Reduce aún más el tamaño en móviles */
+        margin-bottom: 15%;
     }
 
     .titulo {
