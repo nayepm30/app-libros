@@ -241,31 +241,42 @@ h1 {
 
 
 
-/* Adaptaciones específicas para móviles */
+/* Ajustes adicionales para pantallas pequeñas */
 @media (max-width: 576px) {
-    .form-label {
-        font-size: 1rem;
+    .navbar .titulo-inicio {
+        font-size: 1.2rem; /* Reduce el tamaño del título */
     }
 
-    .btn-primary {
-        font-size: 0.9rem;
+    .sidebar {
+        width: 100%; /* Sidebar ocupa toda la pantalla */
+        left: -100%; /* Ocultar sidebar inicialmente */
+    }
+
+    .sidebar.show {
+        left: 0; /* Mostrar sidebar */
+    }
+
+    .nav-link {
+        font-size: 1rem; /* Ajusta tamaño de texto en el sidebar */
+    }
+
+    .linea-separadora {
+        margin: 10px 0; /* Reduce el espacio */
     }
 
     .img-fluid {
-        max-width: 70%; /* Reduce aún más el tamaño en móviles */
-        padding-bottom: 0%;
+        max-width: 80%; /* Mejora el tamaño de imágenes */
+        margin-bottom: 10px; /* Espaciado inferior */
+    }
+}
+
+/* Ajustes para tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+    .sidebar {
+        width: 300px; /* Sidebar más ancho en tablets */
     }
 
-    .titulo {
-        font-size: 2.3rem; /* Reduce el tamaño del título */
-        margin-bottom: 5%;
-        padding-top: 1%;
-    }
-
-    .salir {
-        font-size: 1rem; /* Reduce el tamaño del texto */
-        padding: 8px 0; /* Ajusta el espaciado interior */
-        padding-bottom: 10%;
-        position: absolute;
+    .titulo-inicio {
+        font-size: 1.5rem; /* Títulos medianos */
     }
 }
