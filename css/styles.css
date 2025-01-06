@@ -193,6 +193,11 @@ h1 {
     background-color: rgba(255, 255, 255, 0.3); /* Efecto al pasar el cursor */
 }
 
+
+.salir:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Efecto al pasar el cursor */
+}
+
 /* Adaptaciones específicas para móviles */
 @media (max-width: 576px) {
     .form-label {
@@ -212,5 +217,10 @@ h1 {
         font-size: 2.3rem; /* Reduce el tamaño del título */
         margin-bottom: 5%;
         padding-top: 0%;
+    }
+
+    .salir {
+        font-size: 1rem; /* Reduce el tamaño del texto */
+        padding: 8px 0; /* Ajusta el espaciado interior */
     }
 }
