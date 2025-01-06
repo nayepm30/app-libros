@@ -21,4 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault(); // Evita el comportamiento de navegación
         categoriesMenu.classList.toggle('show');
     });
+
+    
 });

@@ -174,6 +174,25 @@ h1 {
     display: block;
 }
 
+.salir {
+    position: absolute;
+    bottom: 20px; /* Ajusta la distancia desde el borde inferior */
+    left: 0; /* Alinea al inicio del sidebar */
+    width: 100%; /* Asegura que ocupe todo el ancho del sidebar */
+    text-align: center; /* Centra el texto dentro del botón */
+    font-size: 1.2rem; /* Tamaño del texto */
+    font-weight: bold;
+    padding: 10px 0; /* Espaciado interior */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    z-index: 1050; /* Asegura que se vea sobre otros elementos */
+}
+
+.salir:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Efecto al pasar el cursor */
+}
+
 /* Adaptaciones específicas para móviles */
 @media (max-width: 576px) {
     .form-label {
