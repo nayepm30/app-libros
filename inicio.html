@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=category_search" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 <body>
     <div class="overlay" id="sidebarOverlay"></div>
@@ -42,14 +44,30 @@
     </ul>
 </div>
 
-    <nav class="navbar custom-bg">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-            <button id="toggleSidebar" class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <h1 class="titulo-inicio">Letras y Sueños</h1>
-        </div>
-    </nav>
+<nav class="navbar custom-bg">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <h1 class="titulo-inicio">Letras y Sueños</h1>
+    </div>
+</nav>
+
+<div class="linea-separadora"></div> <!-- Línea separadora -->
+
+<nav class="navbar custom-bg">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <button id="toggleSidebar" class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="inicio-texto navbar-brand" href="#">Inicio</a>
+        <!-- Ícono de usuario -->
+        <a href="#" class="icono-usuario">
+            <span class="material-symbols-outlined">account_circle</span>
+        </a>
+    </div>
+</nav>
+
+
+
+
     
 </body>
 </html>

@@ -31,6 +31,13 @@ h1 {
     text-align: center;
 }
 
+.navbar .navbar-brand {
+    color: white; /* Cambia el texto a blanco */
+    font-weight: bold;
+    margin-right: 81%;
+}
+
+
 .form-label {
     font-size: 130%;
 }
@@ -197,6 +204,42 @@ h1 {
 .salir:hover {
     background-color: rgba(255, 255, 255, 0.3); /* Efecto al pasar el cursor */
 }
+
+.btn-outline-danger {
+    padding-left: 50%;
+    font-weight: bold;
+}
+
+.linea-separadora {
+    height: 2px; /* Grosor de la línea */
+    background-color: white; /* Color de la línea */
+    padding-left: 3rem;
+}
+
+/* Estilo del contenedor del ícono de usuario */
+.icono-usuario {
+    color: white; /* Color blanco */
+    text-decoration: none; /* Quita subrayado si es un enlace */
+    display: flex; /* Habilita flexbox */
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+/* Cambios al pasar el cursor */
+.icono-usuario:hover {
+    color: #f8f9fa; /* Cambia el color al pasar el cursor */
+    cursor: pointer;
+}
+
+/* Ajustes del tamaño del ícono */
+.material-symbols-outlined {
+    font-size: 4rem; /* Cambia este valor para aumentar o reducir el tamaño */
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    line-height: 1; /* Asegura que no haya espacio adicional alrededor */
+}
+
+
+
 
 /* Adaptaciones específicas para móviles */
 @media (max-width: 576px) {
