@@ -1,0 +1,197 @@
+/* Estilo para el botón */
+.btnIngresar {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 5%; /* Espaciado superior */
+}
+
+.btnIngresar .btn-primary {
+    font-size: 1.1rem; /* Tamaño de la fuente */
+    padding: 0.4rem 1.5rem; /* Ajusta el relleno */
+    width: auto; /* El ancho se adapta al contenido */
+    display: flex; /* Flexbox para centrar el texto */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Asegura alineación de texto */
+    margin: auto; /* Centra el botón */
+}
+
+/* Imagen en dispositivos pequeños */
+.img-fluid {
+    max-width: 90%; /* Reduce el tamaño en computadoras */
+    height: auto; /* Mantén la proporción */
+    margin-bottom: 7%;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    margin-bottom: 8%;
+    text-align: center;
+}
+
+.form-label {
+    font-size: 130%;
+}
+
+.form-control {
+    width: 100%; /* Ancho personalizado */
+    height: 100%; /* Altura personalizada */
+    font-size: 1.08rem; /* Tamaño de letra */
+}
+
+.titulo {
+    font-family: "Rowdies", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(37, 132, 255);
+    font-size: 3.5rem; /* Cambia el tamaño aquí */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 2%;
+    display: block; /* Asegura que sea un bloque visible */
+    visibility: visible; /* Garantiza que se vea siempre */
+}
+
+.titulo-inicio {
+    font-family: "Rowdies", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-align: center;flex-grow: 1; /* Ocupa todo el espacio disponible para centrar */
+    font-weight: bold;
+    /*-webkit-text-stroke: 1px black; /* Borde negro delgado */
+    
+}
+
+.col-12 {
+    margin-bottom: 6%;
+}
+/*Nav bar*/
+.custom-bg {
+    background-color: rgb(37, 132, 255); /* Color azul personalizado */
+}
+
+.text-light {
+    color: #ffffff; /* Asegura contraste con el fondo azul */
+}
+
+.text-white {
+    color: #ffffff; /* Texto completamente blanco */
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1); /* Cambia el color del ícono al contraste blanco */
+}
+
+/*sidebar*/
+ /* Estilo para el título del sidebar */
+ .sidebar-title {
+    font-family: 'Rowdies', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2564ff;
+}
+
+/* Estilo para el sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculto inicialmente */
+    width: 250px;
+    height: 100vh;
+    background-color:#2564ff;
+    transition: left 0.3s ease;
+    z-index: 1050;
+    overflow-y: auto;
+}
+
+.sidebar.show {
+    left: 0; /* Mostrar el sidebar */
+}
+
+.sidebar .nav-link.subtitle {
+    background: none; /* Quita el fondo */
+    font-size: 1.4rem; /* Aumenta el tamaño de la letra */
+    font-weight: bold;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.sidebar .nav-link.subtitle:hover {
+    background: none; /* No cambia el fondo al pasar el cursor */
+}
+
+.sidebar .nav-link {
+    color:#ffffff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sidebar .nav-link {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 0; /* Reduce el relleno superior/inferior */
+    text-align: center; /* Centra el texto horizontalmente */
+    display: flex; /* Habilita flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+.sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.932);
+}
+
+/* Estilo para el overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+    display: none; /* Oculto inicialmente */
+}
+
+.overlay.show {
+    display: block; /* Mostrar el overlay */
+}
+
+/* Submenú estilo */
+.submenu {
+    display: none;
+    margin-left: 20px;
+}
+
+.submenu.show {
+    display: block;
+}
+
+/* Adaptaciones específicas para móviles */
+@media (max-width: 576px) {
+    .form-label {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+    }
+
+    .img-fluid {
+        max-width: 70%; /* Reduce aún más el tamaño en móviles */
+        padding-bottom: 0%;
+    }
+
+    .titulo {
+        font-size: 2.3rem; /* Reduce el tamaño del título */
+        margin-bottom: 5%;
+        padding-top: 0%;
+    }
+}
