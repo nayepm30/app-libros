@@ -21,6 +21,9 @@
         <div class="sidebar-title">Letras y Sueños</div>
         <ul class="nav flex-column">
             <li class="nav-item">
+                <a class="nav-link d-flex align-items-center agregar " id="agregar" href="#">
+                    <span class=""></span>Agregar
+                </a>
                 <a class="nav-link d-flex align-items-center subtitle" id="categorias" href="#">
                     <span class="material-symbols-outlined"></span>Categorías
                 </a>
@@ -65,14 +68,57 @@
         </div>
     </nav>
 
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Leer</a>
+    <div class="container py-5 tabla">
+        <div class="row-formulario">
+            <div class="col-md-10 offset-md-1 mb-4"> <!-- Ajustado para que sea más ancho -->
+                <div class="formulario-container shadow rounded-4">
+                    <div class="header-bar d-flex justify-content-center align-items-center text-white px-3 py-2">
+                        <div class="d-flex align-items-center">
+                            <i class="mdi mdi-filmstrip"></i>Gestionar libros
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <form id="formularioEstrenos">
+                            <div class="row g-3 align-items-center mb-3">
+                                <div class="col-md-4 text-center">
+                                    <label for="imagen" class="form-label">Imagen del libro</label>
+                                    <input type="file" id="imagen" name="imagen" class="form-control" accept="image/*" required>
+                                </div>
+                            
+                                <div class="col-md-4">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                                </div>
+    
+                                <div class="col-md-4">
+                                    <label for="categoria" class="form-label">Categoría</label>
+                                    <select name="categoria" id="categoria" class="form-control" required>
+                                        <option value="" selected disabled>Seleccione una clasificación</option>
+                                        <option value="cienciaFiccion">Ciencia ficción</option>
+                                        <option value="comedia">Comedia</option>
+                                        <option value="romance">Romance</option>
+                                        <option value="suspenso">Suspenso</option>
+                                    </select>
+                                </div>
+                            </div>
+        
+                            <div class="row g-3 align-items-center mb-3">
+                                <div class="col-md-12">
+                                    <label for="sinopsis" class="form-label">Sinopsis</label>
+                                    <textarea id="sinopsis" name="sinopsis" class="form-control" rows="3" placeholder="Ingrese una sinopsis del libro" required></textarea>
+                                </div>
+                            </div>
+    
+                            <button class="btn btn-style" id="btnRegistrarEstreno">Añadir</button>
+                            <button type="button" class="btn btn-custom" id="btnEditarEstreno" onclick="editarPelicula()">Editar</button>
+                            <button type="button" class="btn btn-outline-danger" id="btnEliminarEstreno" onclick="eliminarPelicula()">Eliminar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
+    </div>
+    
+        
 </body>
 </html>

@@ -76,7 +76,7 @@ h1 {
 }
 /*Nav bar*/
 .custom-bg {
-    background-color: rgb(37, 132, 255); /* Color azul personalizado */
+    background-color:#2564ff; /* Color azul personalizado */
 }
 
 .text-light {
@@ -133,13 +133,21 @@ h1 {
     background: none; /* No cambia el fondo al pasar el cursor */
 }
 
-.sidebar .nav-link {
-    color:#ffffff;
-    font-size: 1.2rem;
-    padding: 10px 20px;
+.sidebar .nav-link.agregar {
+    background: none; /* Quita el fondo */
+    font-size: 1.4rem; /* Ajusta el tamaño al de "categorías" */
     font-weight: bold;
+    color: #ffffff;
+    padding: 15px 20px;
     text-align: center;
+    transition: background-color 0.3s ease; /* Agrega transición para efecto suave */
 }
+
+.sidebar .nav-link.agregar:hover {
+    background-color: rgba(255, 255, 255, 0.932); /* Efecto al pasar el cursor */
+    color: #2564ff; /* Cambia el color del texto si es necesario */
+}
+
 
 .sidebar .nav-link {
     color: #ffffff;
@@ -238,45 +246,108 @@ h1 {
     line-height: 1; /* Asegura que no haya espacio adicional alrededor */
 }
 
+/*formulario*/
+.formulario-container{
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-container label{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.header-bar {
+    background-color: #2564ff;
+    color: #ffffff;
+    padding: 10px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.formulario-container .btn-style {
+    font-size: 1.1rem;
+    background-color: #2564ff;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.formulario-container .btn-style:hover {
+    border: 1px solid #2564ff;
+    background-color: #ffffff;
+    color: #2564ff;
+    font-weight: 500;
+}
+
+h2 {
+    margin-left: 21%;
+    margin-top: 3%;
+}
 
 
+.btn-outline-primary {
+    color: #2564ff;
+    border-color: #2564ff;
+}
 
-/* Ajustes adicionales para pantallas pequeñas */
+.table-responsive .btn-outline-primary:hover {
+    background-color: #2564ff;
+    color: #ffffff;
+}
+
+.btn-custom {
+    color: #2564ff; 
+    border-color: #2564ff;
+}
+
+.btn-custom:hover {
+    background-color: #2564ff; 
+    color: #ffffff; 
+}
+
+.btn-custom-ver {
+    color: #2564ff; 
+    border-color: #2564ff; 
+    margin-left: 43%;
+}
+
+.btn-custom-ver:hover {
+    background-color: #2564ff; 
+    color: #ffffff; 
+}
+
+/* Adaptaciones específicas para móviles */
 @media (max-width: 576px) {
-    .navbar .titulo-inicio {
-        font-size: 1.2rem; /* Reduce el tamaño del título */
+    .form-label {
+        font-size: 1rem;
     }
 
-    .sidebar {
-        width: 100%; /* Sidebar ocupa toda la pantalla */
-        left: -100%; /* Ocultar sidebar inicialmente */
-    }
-
-    .sidebar.show {
-        left: 0; /* Mostrar sidebar */
-    }
-
-    .nav-link {
-        font-size: 1rem; /* Ajusta tamaño de texto en el sidebar */
-    }
-
-    .linea-separadora {
-        margin: 10px 0; /* Reduce el espacio */
+    .btn-primary {
+        font-size: 0.9rem;
     }
 
     .img-fluid {
-        max-width: 80%; /* Mejora el tamaño de imágenes */
-        margin-bottom: 10px; /* Espaciado inferior */
+        max-width: 70%; /* Reduce aún más el tamaño en móviles */
+        padding-bottom: 0%;
+    }
+
+    .titulo {
+        font-size: 2.3rem; /* Reduce el tamaño del título */
+        margin-bottom: 5%;
+        padding-top: 1%;
+    }
+
+    .salir {
+        font-size: 1rem; /* Reduce el tamaño del texto */
+        padding: 8px 0; /* Ajusta el espaciado interior */
+        padding-bottom: 10%;
+        position: absolute;
     }
 }
 
-/* Ajustes para tablets */
-@media (min-width: 577px) and (max-width: 768px) {
-    .sidebar {
-        width: 300px; /* Sidebar más ancho en tablets */
-    }
-
-    .titulo-inicio {
-        font-size: 1.5rem; /* Títulos medianos */
-    }
-}
